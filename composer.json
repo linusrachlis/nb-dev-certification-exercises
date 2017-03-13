@@ -1,0 +1,11 @@
+{
+    "require": {
+        "php": ">=5.5",
+        "zendframework/zendframework1": "^1.12"
+    },
+    "autoload": {
+        "psr-4": {
+            "library\\": "library/"
+        }
+    }
+}
