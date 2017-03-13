@@ -20,12 +20,12 @@ class Nation
     /**
      * @param string $method
      * @param string $url
-     * @param array $params Query string
      * @param array $data Payload
+     * @param array $params Query string
      * @return array Response data
      * @throws \Exception On non-200 response
      */
-    public function request($method, $url, array $params = null, array $data = null)
+    public function request($method, $url, array $data = null, array $params = null)
     {
         if (!isset($params)) {
             $params = [];

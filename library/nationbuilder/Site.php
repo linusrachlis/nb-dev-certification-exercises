@@ -26,18 +26,18 @@ class Site
     /**
      * @param string $method
      * @param string $url Relative to "/api/v1/sites/xyz/"
-     * @param array $params Query string
      * @param array $data Payload
+     * @param array $params Query string
      * @return array Response data
      */
-    public function request($method, $url, $params = [], $data = null)
+    public function request($method, $url, $data = null, $params = null)
     {
         $url = ltrim($url, '/');
         return $this->nation->request(
             $method,
             "sites/$this->siteSlug/$url",
-            $params,
-            $data
+            $data,
+            $params
         );
     }
 }

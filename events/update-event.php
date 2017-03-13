@@ -68,7 +68,7 @@ if (count($_POST)) {
     if ($form->isValid($_POST)) {
         $event = $form->getValues();
         // Update event
-        $site->request('put', "pages/events/$eventId", null, ['event' => $event]);
+        $site->request('put', "pages/events/$eventId", ['event' => $event]);
         $success = true;
     }
 } else {

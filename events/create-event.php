@@ -2,7 +2,7 @@
 
 require __DIR__ . '/../common.php';
 
-$site->request('post', 'pages/events', null, [
+$site->request('post', 'pages/events', [
     'event' => [
         "name" => "Test event",
         "status" => "published",
