@@ -1,7 +1,13 @@
 NationBuilder Dev Certification Exercises
 =========================================
 
-Run PHP server with this command, replacing the environment variables with your nation/site's values:
+First [install Composer](http://getcomposer.org) if necessary. Then run:
+
+```bash
+composer install
+```
+
+Now run PHP server with this command, replacing the environment variables with your nation/site's values:
 
 ```bash
 NB_SLUG=$SLUG NB_API_KEY=$KEY NB_SITE_SLUG=$SITE_SLUG php -S localhost:8080 
