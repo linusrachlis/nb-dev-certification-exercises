@@ -25,3 +25,28 @@ http://localhost:8080/events/update-event.php?id=123
 ```
 
 Replace the `id` param with the ID of the event to edit.
+
+People
+------
+
+### Create a person
+
+```
+http://localhost:8080/people/create-person.php
+```
+
+### Update the person
+
+```
+http://localhost:8080/people/update-person.php?id=123
+```
+
+Replace the `id` param with the ID of the person to edit.
+
+### Delete the person
+
+```
+http://localhost:8080/people/delete-person.php?id=123
+```
+
+Replace the `id` param with the ID of the person to delete.
