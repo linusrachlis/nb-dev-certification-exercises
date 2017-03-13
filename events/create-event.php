@@ -2,7 +2,7 @@
 
 require __DIR__ . '/../common.php';
 
-$site->request('post', 'pages/events', [
+$responseData = $site->request('post', 'pages/events', [
     'event' => [
         "name" => "Test event",
         "status" => "published",
@@ -10,3 +10,11 @@ $site->request('post', 'pages/events', [
         "end_time" => "2013-05-08T19:00:00-00:00"
     ]
 ]);
+
+require_once __DIR__ . '/../html/header.html';
+
+?>
+<h1>Event Created</h1>
+<?php
+var_dump($responseData);
+require_once __DIR__ . '/../html/footer.html';
